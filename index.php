@@ -856,356 +856,41 @@
 				</ul>
 			</div>
 			<div class="price-tabs-wrap">
-				<div class="tab-item active">
+				<?php for($j=0;$j<count($_LANG['pricelist']['option']);$j++):?>
+				<div class="tab-item <?=(($j==0) ? "active" : "")?>">
+					<?php for($i=0;$i<count($_LANG['pricelist']['option'][$j]);$i++):?>
 					<div class="price-block">
 						<div class="price-block-title">
 							<span>
-								<?=$_LANG['pricelist']['option'][0][0][0]?>
-							</span>
-						</div>
-						<div class="price-block-info">
-							<span>
-								<?=$_LANG['pricelist']['option'][0][0][1]?>
-							</span>
-							<p>
-								<?=$_LANG['pricelist']['option'][0][0][2]?>
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								<?=$_LANG['pricelist']['option'][0][1][0]?>
+								<?=$_LANG['pricelist']['option'][$j][$i][0]?>
 							</span>
 							<div class="tooltip">
-								<?php if(!empty($_LANG['pricelist']['option'][0][1]['tooltip'])):?>
+								<?php if(!empty($_LANG['pricelist']['option'][$j][$i]['tooltip'])):?>
 								<div class="tooltip-ico">
 									<?php include 'language/tool-tip.php'; ?>
 								</div>
 								<div class="tooltip-info">
-									<?=$_LANG['pricelist']['option'][0][1]['tooltip']?>
+									<?=$_LANG['pricelist']['option'][$j][$i]['tooltip']?>
 								</div>
 								<?php endif;?>
 							</div>
 						</div>
 						<div class="price-block-info">
 							<span>
-								<?=$_LANG['pricelist']['option'][0][1][1]?>
+								<?=$_LANG['pricelist']['option'][$j][$i][1]?>
 							</span>
 							<p>
-								<?=$_LANG['pricelist']['option'][0][1][2]?>
+								<?=$_LANG['pricelist']['option'][$j][$i][2]?>
 							</p>
 						</div>
 					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								<?=$_LANG['pricelist']['option'][0][2][0]?>
-							</span>
-							<div class="tooltip">
-								<?php if(!empty($_LANG['pricelist']['option'][0][2]['tooltip'])):?>
-								<div class="tooltip-ico">
-									<?php include 'language/tool-tip.php'; ?>
-								</div>
-								<div class="tooltip-info">
-									<?=$_LANG['pricelist']['option'][0][2]['tooltip']?>
-								</div>
-								<?php endif;?>
-							</div>
-						</div>
-						<div class="price-block-info">
-							<span>
-								<?=$_LANG['pricelist']['option'][0][2][1]?>
-							</span>
-							<p>
-								<?=$_LANG['pricelist']['option'][0][2][2]?>
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Плата за тяжелую подъемную работу
-							</span>
-							<div class="tooltip">
-								<div class="tooltip-ico">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 17V17.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 13.5C11.9816 13.1754 12.0692 12.8536 12.2495 12.5831C12.4299 12.3125 12.6933 12.1079 13 12C13.3759 11.8563 13.7132 11.6273 13.9856 11.331C14.2579 11.0347 14.4577 10.6793 14.5693 10.2926C14.6809 9.906 14.7013 9.49874 14.6287 9.10291C14.5562 8.70708 14.3928 8.33349 14.1513 8.01156C13.9099 7.68962 13.597 7.42813 13.2373 7.24766C12.8776 7.0672 12.4809 6.97268 12.0785 6.97157C11.6761 6.97045 11.2789 7.06276 10.9182 7.24123C10.5576 7.4197 10.2432 7.67945 10 8.00004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<div class="tooltip-info">
-									Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)
-								</div>
-							</div>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 10
-							</span>
-							<p>
-								за случай
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Единовременный сбор	
-							</span>
-							<div class="tooltip">
-								<div class="tooltip-ico">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 17V17.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 13.5C11.9816 13.1754 12.0692 12.8536 12.2495 12.5831C12.4299 12.3125 12.6933 12.1079 13 12C13.3759 11.8563 13.7132 11.6273 13.9856 11.331C14.2579 11.0347 14.4577 10.6793 14.5693 10.2926C14.6809 9.906 14.7013 9.49874 14.6287 9.10291C14.5562 8.70708 14.3928 8.33349 14.1513 8.01156C13.9099 7.68962 13.597 7.42813 13.2373 7.24766C12.8776 7.0672 12.4809 6.97268 12.0785 6.97157C11.6761 6.97045 11.2789 7.06276 10.9182 7.24123C10.5576 7.4197 10.2432 7.67945 10 8.00004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<div class="tooltip-info">
-									Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)
-								</div>
-							</div>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 3-4
-							</span>
-							<p>
-								за случай
-							</p>
-						</div>
-					</div>
+					<?php endfor;?>
 				</div>
-				<div class="tab-item">
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Плата за тяжелую подъемную работу
-							</span>
-							<div class="tooltip">
-								<div class="tooltip-ico">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 17V17.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 13.5C11.9816 13.1754 12.0692 12.8536 12.2495 12.5831C12.4299 12.3125 12.6933 12.1079 13 12C13.3759 11.8563 13.7132 11.6273 13.9856 11.331C14.2579 11.0347 14.4577 10.6793 14.5693 10.2926C14.6809 9.906 14.7013 9.49874 14.6287 9.10291C14.5562 8.70708 14.3928 8.33349 14.1513 8.01156C13.9099 7.68962 13.597 7.42813 13.2373 7.24766C12.8776 7.0672 12.4809 6.97268 12.0785 6.97157C11.6761 6.97045 11.2789 7.06276 10.9182 7.24123C10.5576 7.4197 10.2432 7.67945 10 8.00004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<div class="tooltip-info">
-									Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)
-								</div>
-							</div>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 10
-							</span>
-							<p>
-								за случай
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Единовременный сбор	
-							</span>
-							<div class="tooltip">
-								<div class="tooltip-ico">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 17V17.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 13.5C11.9816 13.1754 12.0692 12.8536 12.2495 12.5831C12.4299 12.3125 12.6933 12.1079 13 12C13.3759 11.8563 13.7132 11.6273 13.9856 11.331C14.2579 11.0347 14.4577 10.6793 14.5693 10.2926C14.6809 9.906 14.7013 9.49874 14.6287 9.10291C14.5562 8.70708 14.3928 8.33349 14.1513 8.01156C13.9099 7.68962 13.597 7.42813 13.2373 7.24766C12.8776 7.0672 12.4809 6.97268 12.0785 6.97157C11.6761 6.97045 11.2789 7.06276 10.9182 7.24123C10.5576 7.4197 10.2432 7.67945 10 8.00004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<div class="tooltip-info">
-									Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)
-								</div>
-							</div>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 3-4
-							</span>
-							<p>
-								за случай
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Выгрузка контейнера
-							</span>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 200-500
-							</span>
-							<p>
-								за контейнер
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								LTL (меньше нагрузки на грузовик)
-							</span>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 20
-							</span>
-							<p>
-								за паллет
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Единовременный сбор 
-							</span>
-							<div class="tooltip">
-								<div class="tooltip-ico">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 17V17.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 13.5C11.9816 13.1754 12.0692 12.8536 12.2495 12.5831C12.4299 12.3125 12.6933 12.1079 13 12C13.3759 11.8563 13.7132 11.6273 13.9856 11.331C14.2579 11.0347 14.4577 10.6793 14.5693 10.2926C14.6809 9.906 14.7013 9.49874 14.6287 9.10291C14.5562 8.70708 14.3928 8.33349 14.1513 8.01156C13.9099 7.68962 13.597 7.42813 13.2373 7.24766C12.8776 7.0672 12.4809 6.97268 12.0785 6.97157C11.6761 6.97045 11.2789 7.06276 10.9182 7.24123C10.5576 7.4197 10.2432 7.67945 10 8.00004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<div class="tooltip-info">
-									Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)
-								</div>
-							</div>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 3-4
-							</span>
-							<p>
-								за случай
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="tab-item">
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								LTL (меньше нагрузки на грузовик)
-							</span>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 20
-							</span>
-							<p>
-								за паллет
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Единовременный сбор 
-							</span>
-							<div class="tooltip">
-								<div class="tooltip-ico">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 17V17.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 13.5C11.9816 13.1754 12.0692 12.8536 12.2495 12.5831C12.4299 12.3125 12.6933 12.1079 13 12C13.3759 11.8563 13.7132 11.6273 13.9856 11.331C14.2579 11.0347 14.4577 10.6793 14.5693 10.2926C14.6809 9.906 14.7013 9.49874 14.6287 9.10291C14.5562 8.70708 14.3928 8.33349 14.1513 8.01156C13.9099 7.68962 13.597 7.42813 13.2373 7.24766C12.8776 7.0672 12.4809 6.97268 12.0785 6.97157C11.6761 6.97045 11.2789 7.06276 10.9182 7.24123C10.5576 7.4197 10.2432 7.67945 10 8.00004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<div class="tooltip-info">
-									Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)
-								</div>
-							</div>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 3-4
-							</span>
-							<p>
-								за случай
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Выгрузка контейнера
-							</span>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 200-500
-							</span>
-							<p>
-								за контейнер
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Плата за тяжелую подъемную работу
-							</span>
-							<div class="tooltip">
-								<div class="tooltip-ico">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 17V17.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 13.5C11.9816 13.1754 12.0692 12.8536 12.2495 12.5831C12.4299 12.3125 12.6933 12.1079 13 12C13.3759 11.8563 13.7132 11.6273 13.9856 11.331C14.2579 11.0347 14.4577 10.6793 14.5693 10.2926C14.6809 9.906 14.7013 9.49874 14.6287 9.10291C14.5562 8.70708 14.3928 8.33349 14.1513 8.01156C13.9099 7.68962 13.597 7.42813 13.2373 7.24766C12.8776 7.0672 12.4809 6.97268 12.0785 6.97157C11.6761 6.97045 11.2789 7.06276 10.9182 7.24123C10.5576 7.4197 10.2432 7.67945 10 8.00004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<div class="tooltip-info">
-									Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)
-								</div>
-							</div>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 10
-							</span>
-							<p>
-								за случай
-							</p>
-						</div>
-					</div>
-					<div class="price-block">
-						<div class="price-block-title">
-							<span>
-								Единовременный сбор	
-							</span>
-							<div class="tooltip">
-								<div class="tooltip-ico">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 17V17.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path d="M12 13.5C11.9816 13.1754 12.0692 12.8536 12.2495 12.5831C12.4299 12.3125 12.6933 12.1079 13 12C13.3759 11.8563 13.7132 11.6273 13.9856 11.331C14.2579 11.0347 14.4577 10.6793 14.5693 10.2926C14.6809 9.906 14.7013 9.49874 14.6287 9.10291C14.5562 8.70708 14.3928 8.33349 14.1513 8.01156C13.9099 7.68962 13.597 7.42813 13.2373 7.24766C12.8776 7.0672 12.4809 6.97268 12.0785 6.97157C11.6761 6.97045 11.2789 7.06276 10.9182 7.24123C10.5576 7.4197 10.2432 7.67945 10 8.00004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-								<div class="tooltip-info">
-									Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)
-								</div>
-							</div>
-						</div>
-						<div class="price-block-info">
-							<span>
-								$ 3-4
-							</span>
-							<p>
-								за случай
-							</p>
-						</div>
-					</div>
-				</div>
+				<?php endfor;?>
+				
 			</div>
 			<a href="#" class="yellow-btn">
-				Скачать прайс-лист в PDF
+				<?=$_LANG['pricelist']['btn_price_pdf']?>
 			</a>
 		</div>
 	</div>
@@ -1215,30 +900,30 @@
 	<div class="container">
 		<img class="contact-illustration" src="img/call-robot.svg" alt="illustration">
 		<div class="s-title">
-			Возникли вопросы?
+			<?=$_LANG['sec3']['title']?>
 		</div>
 		<p class="contact-subtitle">
-			Заполните форму и мы свяжемся с вами в течении 15 минут
+			<?=$_LANG['sec3']['text']?>
 		</p>
 		<form action="#" class="contact-form">
 			<div class="contact-form-input">
-				<input type="text" placeholder="Ваше имя" class="name">
+				<input type="text" placeholder="<?=$_LANG['sec3']['inputName']?>" class="name">
 				<span>
-					Поле заполнено некорректно
+					<?=$_LANG['sec3']['inputError']?>
 				</span>
 			</div>
 			<div class="contact-form-input">
-				<input type="text" placeholder="Ваш телефон" class="phone">
+				<input type="text" placeholder="<?=$_LANG['sec3']['inpuPhone']?>" class="phone">
 				<span>
-					Поле заполнено некорректно
+					<?=$_LANG['sec3']['inputError']?>
 				</span>
 			</div>
 			<button class="blue-btn">
-				Отправить заявку
+				<?=$_LANG['sec3']['btn']?>
 			</button>
 		</form>
 		<p class="privacy-policy">
-			Нажимая на кнопку, я соглашаюсь с условиями <a href="#">Политики конфиденциальности</a>
+			<?=$_LANG['sec3']['mimiText']?>
 		</p>
 	</div>
 </section>
@@ -1246,7 +931,7 @@
 <section class="how-works" id="how-works">
 	<div class="container">
 		<div class="s-title">
-			Как это работает?
+			<?=$_LANG['sec4']['title']?>
 		</div>
 
 		<div class="how-works-video">
@@ -1265,46 +950,47 @@
 	<div class="container">
 		<div class="contact-us">
 			<div class="contact-us-title">
-				Свяжитесь с нами чтобы начать
+				<?=$_LANG['sec5']['form']['title']?>
 			</div>
 			<form action="#" class="contact-us-form">
 				<div class="contact-us-form-input">
-					<input type="text" placeholder="Ваш E-mail" class="email">
+					<input type="text" placeholder="<?=$_LANG['sec5']['form']['inputEmail']?>" class="email">
 					<span>
-						Поле заполнено некорректно
+						<?=$_LANG['sec5']['form']['inputError']?>
 					</span>
 				</div>
 				<div class="select-wrap">
 					<select>
-						<option value="Option 0" hidden>Тема сообщения</option>
-						<option value="Option 1">Option 1</option>
-						<option value="Option 2">Option 2</option>
-						<option value="Option 3">Option 3</option>
+						<option value="Option 0" hidden><?=$_LANG['sec5']['form']['titleMes']?></option>
+						<?php for($i=0;$i<count($_LANG['sec5']['form']['options']);$i++) :?>
+							<option value="Option 1"><?=$_LANG['sec5']['form']['options'][$i]?></option>
+						<?php endfor;?>
 					</select>
 				</div>
 				<div class="contact-us-form-input">
-					<textarea placeholder="Сообщение" class="message"></textarea>
+					<textarea placeholder="<?=$_LANG['sec5']['form']['inputMes']?>" class="message"></textarea>
 					<span>
-						Поле заполнено некорректно
+						<?=$_LANG['sec5']['form']['inputError']?>
 					</span>
 				</div>
 				<button type="submit" class="yellow-btn">
-					Отправить сообщение
+					<?=$_LANG['sec5']['form']['btn']?>
 				</button>
 			</form>
 			<p class="privacy-policy">
-				Нажимая на кнопку, я соглашаюсь с условиями <a href="#">Политики конфиденциальности</a>
+				<?=$_LANG['sec5']['form']['policy']?>
 			</p>
 		</div>
 		<div class="faq-main">
 			<div class="s-title">
-				Вопрос-ответ
+				<?=$_LANG['sec5']['qwes']['title']?>
 			</div>
 			<div class="faq-inner">
+				<?php for($i=0;$i<count($_LANG['sec5']['qwes']['qw']);$i++) :?>
 				<div class="faq-item">
 					<div class="faq-item-title">
 						<span>
-							Как быстро вы сможете доставить мои товары на склад Амазон? 
+							<?=$_LANG['sec5']['qwes']['qw'][$i][0]?>
 						</span>
 
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1314,78 +1000,13 @@
 					</div>
 					<div class="faq-item-info">
 						<p>
-							Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.
+							<?=$_LANG['sec5']['qwes']['qw'][$i][1]?>
 						</p>
 					</div>
 				</div>
-				<div class="faq-item">
-					<div class="faq-item-title">
-						<span>
-							Отправляете ли вы товар в FBA на поддонах? 
-						</span>
+				<?php endfor;?>
 
-						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect y="8" width="20" height="4" fill="#6A3DF7"/>
-							<rect x="12" width="20" height="4" transform="rotate(90 12 0)" fill="#6A3DF7"/>
-						</svg>	
-					</div>
-					<div class="faq-item-info">
-						<p>
-							Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.
-						</p>
-					</div>
-				</div>
-				<div class="faq-item">
-					<div class="faq-item-title">
-						<span>
-							Где вы находитесь? 
-						</span>
-
-						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect y="8" width="20" height="4" fill="#6A3DF7"/>
-							<rect x="12" width="20" height="4" transform="rotate(90 12 0)" fill="#6A3DF7"/>
-						</svg>	
-					</div>
-					<div class="faq-item-info">
-						<p>
-							Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.
-						</p>
-					</div>
-				</div>
-				<div class="faq-item">
-					<div class="faq-item-title">
-						<span>
-							Как я могу оплатить ваши услуги? 
-						</span>
-
-						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect y="8" width="20" height="4" fill="#6A3DF7"/>
-							<rect x="12" width="20" height="4" transform="rotate(90 12 0)" fill="#6A3DF7"/>
-						</svg>	
-					</div>
-					<div class="faq-item-info">
-						<p>
-							Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.
-						</p>
-					</div>
-				</div>
-				<div class="faq-item">
-					<div class="faq-item-title">
-						<span>
-							Делаете ли Вы FBM отправки?
-						</span>
-
-						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect y="8" width="20" height="4" fill="#6A3DF7"/>
-							<rect x="12" width="20" height="4" transform="rotate(90 12 0)" fill="#6A3DF7"/>
-						</svg>	
-					</div>
-					<div class="faq-item-info">
-						<p>
-							Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.
-						</p>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -1434,14 +1055,13 @@
 			</div>
 			<div class="footer-contact">
 				<div class="footer-contact-title">
-					Остались вопросы? <br>
-					Наш e-mail ждёт вашего письма!
+					<?=$_LANG['footer']['title']?>
 				</div>
 				<form action="#" class="footer-contact-form">
 					<div class="footer-contact-form-input">
-						<input type="text" placeholder="Ваш E-mail">
+						<input type="text" placeholder="<?=$_LANG['footer']['inputEmail']?>">
 						<span>
-							Поле заполнено некорректно
+							<?=$_LANG['footer']['inputError']?>
 						</span>
 					</div>
 					<button>
@@ -1457,16 +1077,16 @@
 	<div class="footer-bottom">
 		<div class="container">
 			<p>
-				&copy; 2020 Just Prep Center
+				<?=$_LANG['footer2'][0]?>
 			</p>
 			<a href="#" class="privacy-policy">
-				Политика конфиденциальности
+				<?=$_LANG['footer2'][1]?>
 			</a>
 			<div class="dev-info">
-				Иллюстрации <a href="https://stories.freepik.com/people">Freepik Stories</a>
+				<?=$_LANG['footer2'][2]?>
 			</div>
 			<div class="dev-info">
-				Разработка дизайна сайта  <a href="https://www.behance.net/gromova1_10792">Анастасия Громова</a>
+				<?=$_LANG['footer2'][3]?>
 			</div>
 		</div>
 	</div>
