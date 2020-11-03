@@ -128,10 +128,10 @@
 	<div class="container">
 		<div class="hero-info">
 			<h1>
-				Сократите расходы на доставку в 2 раза
+				<?=$_LANG['sec1']['title']?>
 			</h1>
 			<p>
-				Полный спектр складских услуг для продавцов amazon, eBay и других маркетплейсов
+				<?=$_LANG['sec1']['text']?>
 			</p>
 			<a data-fslightbox="lightbox" href="video/ocean.mp4" class="hero-illustration-mob hero-video-play">
 				<svg viewBox="0 0 270 223" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -566,18 +566,18 @@
 			</a>
 			<ul>
 				<li>
-					<b>12 миль</b> до крупнейших складов Amazon
+					<?=$_LANG['sec1']['opt1']?>
 				</li>
 				<li>
-					<b>онлайн сервис</b> контроля транспортировки
+					<?=$_LANG['sec1']['opt2']?>
 				</li>
 			</ul>
 			<div class="hero-btns">
 				<a href="#faq" class="blue-btn">
-					Связаться с нами
+					<?=$_LANG['sec1']['btn1']?>
 				</a>
 				<a href="#price" class="yellow-btn">
-					Смотреть прайс-лист
+					<?=$_LANG['sec1']['btn2']?>
 				</a>
 			</div>
 		</div>
