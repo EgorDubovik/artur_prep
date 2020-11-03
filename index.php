@@ -1,6 +1,18 @@
 <?php
 	include 'language/RU.php';
-	$_LANG = $_RU;
+	include 'language/EN.php';
+	$arrLang = ['ru'=>$_RU,'en'=>$_EN];
+	$brLang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+	if(array_key_exists($brLang, $arrLang)){
+		$_LANG = $arrLang[$brLang];
+	} else {
+		$_LANG = $_RU;
+	}
+	if(isset($_GET['lang'])){
+		if(array_key_exists($_GET['lang'],$arrLang))
+			$_LANG = $arrLang[$_GET['lang']];
+	}
+
 ?>
 
 <!DOCTYPE html>
@@ -103,10 +115,12 @@
 			<div class="language-dropdown">
 				<ul>
 					<li>
-						RU
+						<a href="?lang=ru">
+							RU
+						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="?lang=en">
 							EN
 						</a>
 					</li>
