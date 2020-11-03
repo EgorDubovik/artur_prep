@@ -1,3 +1,8 @@
+<?php
+	include 'language/RU.php';
+	$_LANG = $_RU;
+?>
+
 <!DOCTYPE html>
 
 <html lang="ru">
@@ -23,37 +28,37 @@
 		</a>
 		<nav>
 			<div class="header-nav-title">
-				Меню
+				<?=$_LANG['menu'][0]?>
 			</div>
 			<ul>
 				<li>
 					<a href="#about">
-						О компании
+						<?=$_LANG['menu'][1]?>
 					</a>
 				</li>
 				<li>
 					<a href="#statistic">
-						Партнёры
+						<?=$_LANG['menu'][2]?>
 					</a>
 				</li>
 				<li>
 					<a href="#how-works">
-						Как это работает
+						<?=$_LANG['menu'][3]?>
 					</a>
 				</li>
 				<li>
 					<a href="#price">
-						Прайс
+						<?=$_LANG['menu'][4]?>
 					</a>
 				</li>
 				<li>
 					<a href="#faq">
-						FAQ
+						<?=$_LANG['menu'][5]?>
 					</a>
 				</li>
 				<li>
 					<a href="#map">
-						Контакты
+						<?=$_LANG['menu'][6]?>
 					</a>
 				</li>
 			</ul>
@@ -108,8 +113,8 @@
 				</ul>
 			</div>
 		</div>
-		<a href="#" class="dark-btn">
-			Личный кабинет
+		<a href="http://account.just-prep.com" class="dark-btn">
+			<?=$_LANG['menu'][7]?>
 		</a>
 		<div class="hamburger hamburger--spin">
 			<div class="hamburger-box">
