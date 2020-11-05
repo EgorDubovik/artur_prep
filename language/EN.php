@@ -2,64 +2,64 @@
 
 $_EN = [
 	'menu'=>[
-		'Меню','About company','Партнёры','Как это работает','Прайс','FAQ','Контакты','Личный кабинет'
+		'Menu','About us','Payment','How it works','Price-list','FAQ','Contact us','Sign in'
 	],
 	'sec1' => [
-		'title' => "Сократите расходы на доставку в 2 раза",
-		'text' => "Полный спектр складских услуг для продавцов amazon, eBay и других маркетплейсов",
-		'opt1' => "<b>12 миль</b> до крупнейших складов Amazon",
-		'opt2' => "<b>онлайн сервис</b> контроля транспортировки",
-		'btn1' => "Связаться с нами",
-		'btn2' => "Смотреть прайс-лист"
+		'title' => "Reduce shipping costs at 50%",
+		'text' => "A full range of warehouse services for sellers on amazon, eBay and other marketplaces",
+		'opt1' => "<b>12 miles</b> from biggest Amazon warehouses",
+		'opt2' => "Online <b>transportation control</b> service",
+		'btn1' => "Contact us",
+		'btn2' => "Show price-list"
 	],
 	'prei'=> [
-		'Одинаково высокое качество обслуживания для крупного и малого бизнеса',
-		'Готовы как к разовым контрактам, таки к долгосрочному сотрудничеству',
-		'Никаких «скрытых» переплат. Работаем исключительно по прайс-листу',
-		'Постоянные и хорошие скидки партнерам',
-		'Отличное расположение значительно ускоряет логистику и снижает затраты',
-		'Большие складские площади позволяют разместить партии товара любых размеров'
+		'The highest quality of service for large and small businesses',
+		'Ready for one-time contracts or long-term cooperation',
+		'No "hidden" overpayments. We work only according to the price list',
+		'Permanent and high discounts for partners',
+		'The location of our warehouses speeds up logistics and reduces costs',
+		'We can accept any shipment size at our warehouse'
 	],
 	'sec2' => [
-		'title' => '<span>Just Prep Center</span> — <br> Мы знаем как сделать нашу работу для Вас!',
-		'text' => "С 2016 года наши Преп центры помогли сотням продавцам различных маркетплейсов добиваться успеха. Мы предлагаем <b>полный спектр складских услуг</b> для продавцов amazon, eBay и других маркетплейсов.
+		'title' => '<span>Just Prep Center</span> — <br> We know how to do our work for you!',
+		'text' => "Since 2016, our centers have helped hundreds of merchants across multiple marketplaces to succeed. We offer a <b>full range</b> of warehouse services for Amazon, eBay and other marketplace sellers.
 			<br><br>
-			Наш основной склад в Балтимор расположен близко к грузовым портам и аэропортам <b>20-50 миль</b> в зависимости от порта и аэропорта, всего <b>12 миль</b> до 2ух крупнейший складов Амазон. Все это в совокупности значительно <b>уменьшает расходы</b> на транспортировку.
+			Our main warehouse in Baltimore is located close to cargo ports and airports, and only <b>in 12 miles </b> from the largest Amazon warehouses. All this together significantly <b> reduces transportation costs </b>.
 			<br><br>
-			При помощи нашего <b>online сервиса</b> Вы получаете полный контроль над процессом подготовки и отправки Ваших товаров. <b>Вы продаете — Мы делаем остальное.</b>",
+			With our <b> online service </b> you have full control over the preparation and freight of your goods. <b> You sell - We do the rest. </b>",
 
 	],
 	'stat' => [
 		[
-			'num'=>8278232,
-			'text' =>'обработано входящих заказов'
+			'num'=>849,
+			'text' =>'<b>Incoming orders processed</b>'
 		],
 		[
-			'num'=>247521,
-			'text' =>'посылок <br> отправлено'
+			'num'=>1492,
+			'text' =>'<b>Parcels</b> <br> <b>sent</b>'
 		],
 		[
 			'num'=>2016,
-			'text' =>'год основания <br> Just Prep Center'
+			'text' =>'<b>Year of foundation</b> <br> <b>Just Prep Center</b>'
 		],
 		[
-			'num'=>1236455,
-			'text' =>'посылок <br> принято'
+			'num'=>1213,
+			'text' =>'<b>Pounds</b> <br> <b>transported</b>'
 		],
 		[
-			'num'=>591284,
-			'text' =>'упаковано посылок наших клиентов'
+			'num'=>1046,
+			'text' =>'<b>Shipments packed</b>'
 		],
 	],
 	'pricelist'=> [
-		'title'=>'Прайс-лист',
+		'title'=>'Price-list',
 		'cat'=>[
-			'title'=>'Выберите категорию интересующих услуг',
+			'title'=>'Choose category',
 			'cat1'=>'Выгрузка',
 			'cat2'=>'Склад',
 			'cat3'=>'Погрузка'
 		],
-		'btn_price_pdf' => 'Скачать прайс-лист в PDF',
+		'btn_price_pdf' => 'Download price-list in PDF',
 		'option'=>[
 			[ // Tab number 1 (для Выгрузка)
 				['Выгрузка контейнера','$ 200-500','за контейнер',
@@ -116,55 +116,55 @@ $_EN = [
 		]
 	],
 	'sec3' => [
-		'title'=> 'Возникли вопросы?',
-		'text'=> 'Заполните форму и мы свяжемся с вами в течении 15 минут',
-		'inputName' => 'Ваше имя',
-		'inpuPhone' => 'Ваш телефон',
-		'inputError' => 'Поле заполнено некорректно',
-		'btn' => 'Отправить заявку',
-		'mimiText' => 'Нажимая на кнопку, я соглашаюсь с условиями <a href="#">Политики конфиденциальности</a>'
+		'title'=> 'Still have questions?',
+		'text'=> 'Fill the form and we will contact you',
+		'inputName' => 'Name',
+		'inpuPhone' => 'Mobile number',
+		'inputError' => 'Filled incorrect',
+		'btn' => 'Send',
+		'mimiText' => 'By clicking on the button, I agree to the terms of the <a href="#">Privacy policy</a>'
 	],
 	'sec4' => [
-		'title' => 'Как это работает?'
+		'title' => 'How it works'
 	],
 	'sec5' => [
 		'form' => [
-			'title' => 'Свяжитесь с нами чтобы начать',
-			'inputEmail' => 'Ваш E-mail',
-			'inputMes' => 'Сообщение',
-			'inputError' => 'Поле заполнено некорректно',
-			'titleMes' => 'Тема сообщения',
-			'options'=> [ // сколько сдесьбудет елементов столько будет в выпадаюшем списке
-						'Option 1','Option 2','Option 3'
+			'title' => 'Contact us to start partnership',
+			'inputEmail' => 'E-mail',
+			'inputMes' => 'Message',
+			'inputError' => 'Filled incorrect',
+			'titleMes' => 'Message topic',
+			'options'=> [ // сколько сдесьбудет элементов столько будет в выпадаюшем списке
+						'I want to order your services','I want to offer my services','I want to propose other forms of partnership'
 						],
-			'btn' => 'Отправить сообщение',
-			'policy' => 'Нажимая на кнопку, я соглашаюсь с условиями <a href="#">Политики конфиденциальности</a>'
+			'btn' => 'Send message',
+			'policy' => 'By clicking on the button, I agree to the terms of the <a href="#">Privacy policy</a>'
 		],
 		'qwes' => [
-			'title'=>"Вопрос-ответ",
+			'title'=>"FAQ",
 			'qw' => [
-				[ // каждый елемент многомерного массива содержит 2 елемента, вопрос - ответ
-					'Как быстро вы сможете доставить мои товары на склад Амазон? ', // Вопрос
-					'Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.' // Ответ
+				[ // каждый элемент многомерного массива содержит 2 элемента, вопрос - ответ
+					'How fast can you ship my products to Amazon?', // Вопрос
+					'It can take anywhere between 5 hours to 72 hours to ship your items to Amazon.' // Ответ
 				],
 				[
-					'Отправляете ли вы товар в FBA на поддонах? ',
-					'Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.'
-				],
-
-				[
-					'Где вы находитесь? ',
-					'Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.'
+					'Can you ship on pallets to FBA?',
+					'Yes. We have a loading dock. If your shipment arrives on non-FBA compliant pallets, plastics, plywood or weak pallets, you will need re-palletizing services'
 				],
 
 				[
-					'Как я могу оплатить ваши услуги? ',
-					'Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.'
+					'Where are you located?',
+					'We currently have two open locations, one in Baltimore MD, and the other in Hollywood FL,(see maps below).'
 				],
 
 				[
-					'Делаете ли Вы FBM отправки?',
-					'Вы можете оплатить используя кредитную или дебитовую карточку, Zelle, PayPall, Payoneer.'
+					'How can i pay for your services?',
+					'You can pay your invoice using a credit/debit card, Zelle, PayPall, Payoneer'
+				],
+
+				[
+					'Do you work with FBM?',
+					'Yes, through limited access to "Amazon User-Permissions". we will be able to make your FBM dispatches and keep records. You do not need to do anything except setting User-Permissions.'
 				]
 
 			]
@@ -172,16 +172,16 @@ $_EN = [
 		]
 	],
 	'footer'=>[
-		'title'=>'Остались вопросы? <br>
-					Наш e-mail ждёт вашего письма!',
-		'inputEmail' => 'Ваш E-mail',
-		'inputError' => 'Поле заполнено некорректно',
+		'title'=>'Still have questions? <br>
+					Our E-mail waiting for your questions!',
+		'inputEmail' => 'Your E-mail',
+		'inputError' => 'Filled incorrect',
 	],
 	'footer2'=>[
 		'&copy; 2020 Just Prep Center',
-		'Политика конфиденциальности',
-		'Иллюстрации <a href="https://stories.freepik.com/people">Freepik Stories</a>',
-		'Разработка дизайна сайта  <a href="https://www.behance.net/gromova1_10792">Анастасия Громова</a>'
+		'Privacy policy',
+		'Illustrations <a href="https://stories.freepik.com/people">Freepik Stories</a>',
+		'Design created by  <a href="https://www.behance.net/gromova1_10792">Anastasiya Gromova</a>'
 	]
 
 ];
