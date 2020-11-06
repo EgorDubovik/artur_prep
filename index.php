@@ -7,11 +7,11 @@
 	if(array_key_exists($brLang, $arrLang)){
 		$flang = $brLang;
 	} else {
-		$brLang = 'ru';
+		$flang = 'ru';
 	}
 	if(isset($_GET['lang'])){
 		if(array_key_exists($_GET['lang'],$arrLang))
-			$brLang = $_GET['lang'];
+			$flang = $_GET['lang'];
 	}
 	$_LANG = $arrLang[$flang];
 
