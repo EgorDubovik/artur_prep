@@ -109,7 +109,7 @@
 		<div class="language">
 			<div class="language-select">
 				<span>
-					RU
+					<?=strtoupper($_LANG);?>
 				</span>
 			</div>
 			<div class="language-dropdown">
