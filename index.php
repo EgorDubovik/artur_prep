@@ -149,7 +149,7 @@
 			<p>
 				<?=$_LANG['sec1']['text']?>
 			</p>
-			<a data-fslightbox="lightbox" href="video/ocean.mp4" class="hero-illustration-mob hero-video-play">
+			<a data-fslightbox="lightbox" href="video/IMG_2109.mp4" class="hero-illustration-mob hero-video-play">
 				<svg viewBox="0 0 270 223" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#clip0)">
 					<path d="M205.279 206.836L229.367 192.971H255.436L231.298 206.836H205.279Z" fill="url(#paint0_linear)"/>
@@ -957,7 +957,7 @@
 					<path d="M70 50L40 67.3205L40 32.6795L70 50Z"/>
 				</svg>
 			</div>
-			<video src="video/ocean.mp4"></video>
+			<video src="video/IMG_2109.mp4"></video>
 		</div>
 	</div>
 </section>
