@@ -1095,7 +1095,7 @@
 			<p>
 				<?=$_LANG['footer2'][0]?>
 			</p>
-			<a href="#" class="privacy-policy">
+			<a target="_blank" href="https://www.privacypolicygenerator.info/live.php?token=E8HVKfcLUNbDhc6EBoXSsfjaV4Dh4I9c" class="privacy-policy">
 				<?=$_LANG['footer2'][1]?>
 			</a>
 			<div class="dev-info">

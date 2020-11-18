@@ -122,7 +122,7 @@ $_EN = [
 		'inpuPhone' => 'Mobile number',
 		'inputError' => 'Filled incorrect',
 		'btn' => 'Send',
-		'mimiText' => 'By clicking on the button, I agree to the terms of the <a href="#">Privacy policy</a>'
+		'mimiText' => 'By clicking on the button, I agree to the terms of the <a href="https://www.privacypolicygenerator.info/live.php?token=E8HVKfcLUNbDhc6EBoXSsfjaV4Dh4I9c" target="_blank">Privacy policy</a>'
 	],
 	'sec4' => [
 		'title' => 'How it works'
@@ -138,7 +138,7 @@ $_EN = [
 						'I want to order your services','I want to offer my services','I want to propose other forms of partnership'
 						],
 			'btn' => 'Send message',
-			'policy' => 'By clicking on the button, I agree to the terms of the <a href="#">Privacy policy</a>'
+			'policy' => 'By clicking on the button, I agree to the terms of the <a href="https://www.privacypolicygenerator.info/live.php?token=E8HVKfcLUNbDhc6EBoXSsfjaV4Dh4I9c" target="_blank">Privacy policy</a>'
 		],
 		'qwes' => [
 			'title'=>"FAQ",
