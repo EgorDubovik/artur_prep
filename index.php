@@ -38,7 +38,7 @@
 <header>
 	<div class="container">
 		<a href="#" class="header-logo">
-			<img src="img/logo-dark.svg" alt="logo">
+			<img src="img/logo.png" height="60" alt="logo">
 		</a>
 		<nav>
 			<div class="header-nav-title">
