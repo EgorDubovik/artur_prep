@@ -8,17 +8,17 @@ $_EN = [
 		'title' => "Reduce shipping costs at 50%",
 		'text' => "A full range of warehouse services for sellers on amazon, eBay and other marketplaces",
 		'opt1' => "<b>12 miles</b> from biggest Amazon warehouses",
-		'opt2' => "Online <b>transportation control</b> service",
+		'opt2' => "Online <b>shipment tracking</b> service",
 		'btn1' => "Contact us",
 		'btn2' => "Show price-list"
 	],
 	'prei'=> [
-		'The highest quality of service for large and small businesses',
-		'Ready for one-time contracts or long-term cooperation',
-		'No "hidden" overpayments. We work only according to the price list',
-		'Permanent and high discounts for partners',
-		'The location of our warehouses speeds up logistics and reduces costs',
-		'We can accept any shipment size at our warehouse'
+		'<b>The highest quality of service for large and small businesses</b>',
+		'<b>Ready for one-time contracts or long-term cooperation</b>',
+		'<b>No "hidden" overpayments. We work only according to the price list</b>',
+		'<b>Permanent and high discounts for partners</b>',
+		'<b>The location of our warehouses speeds up logistics and reduces costs</b>',
+		'<b>We can accept any shipment size at our warehouse</b>'
 	],
 	'sec2' => [
 		'title' => '<span>Just Prep Center</span> — <br> We know how to do our work for you!',
@@ -122,7 +122,7 @@ $_EN = [
 		'inpuPhone' => 'Mobile number',
 		'inputError' => 'Filled incorrect',
 		'btn' => 'Send',
-		'mimiText' => 'By clicking on the button, I agree to the terms of the <a href="https://www.privacypolicygenerator.info/live.php?token=E8HVKfcLUNbDhc6EBoXSsfjaV4Dh4I9c" target="_blank">Privacy policy</a>'
+		'mimiText' => 'By clicking on the button, I agree to the terms of the <a href="#">Privacy policy</a>'
 	],
 	'sec4' => [
 		'title' => 'How it works'
@@ -138,7 +138,7 @@ $_EN = [
 						'I want to order your services','I want to offer my services','I want to propose other forms of partnership'
 						],
 			'btn' => 'Send message',
-			'policy' => 'By clicking on the button, I agree to the terms of the <a href="https://www.privacypolicygenerator.info/live.php?token=E8HVKfcLUNbDhc6EBoXSsfjaV4Dh4I9c" target="_blank">Privacy policy</a>'
+			'policy' => 'By clicking on the button, I agree to the terms of the <a href="#">Privacy policy</a>'
 		],
 		'qwes' => [
 			'title'=>"FAQ",
