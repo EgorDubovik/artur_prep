@@ -17,8 +17,8 @@ if(isset($_POST['event']))
 	$to      = 'posik.web.m@gmail.com';
 	$subject = 'Mail from just-prep';
 	$message = $_POST['data'];
-	$headers = 'From: webmaster@example.com' . "\r\n" .
-	    'Reply-To: webmaster@example.com' . "\r\n" .
+	$headers = 'From: webmaster@just-prep.com' . "\r\n" .
+	    'Reply-To: webmaster@just-prep.com' . "\r\n" .
 	    'X-Mailer: PHP/' . phpversion();
 
 	if(mail($to, $subject, $message, $headers)){
