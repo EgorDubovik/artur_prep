@@ -1,5 +1,7 @@
 <?php
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -10,19 +12,19 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 // Instantiation and passing `true` enables exceptions
-//$mail = new PHPMailer(true);
-
-if(isset($_POST['event'])){
+$mail = new PHPMailer(true);
+$data = "test text";
+// if(isset($_POST['event'])){
 	$headers = 'From: <webmaster@just-prep.com>' . "\r\n" .
 'Reply-To: <info@just-prep.com>';
-	if(mail('<posik.web.m@gmail.com>', 'the subject', 'the message', $headers,
-  'webmaster@just-prep.com')){
+	if(mail('<posik.web.m@gmail.com>', 'the subject', 'the message', $headers)){
 		echo "true";
 	} else {
-		echo "false".error_get_last()['message'];
+		echo "false:".error_get_last()['message'];
 	}
 
-}
+// }
+
 // try {
 //     //Recipients
 //     $mail->setFrom('from@just-prep.com', 'Mailer');
@@ -31,9 +33,9 @@ if(isset($_POST['event'])){
 //     // Content
 //     $mail->isHTML(true);                                  // Set email format to HTML
 //     $mail->Subject = 'Sending from just-prep';
-//     $mail->Body    = $_POST['data'];
+//     $mail->Body    = $data;
 //     $mail->send();
-//     echo 'Sending status:true'.$_POST['data'];
+//     echo 'Sending status:true'.$data;
 // } catch (Exception $e) {
 //     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 // }
