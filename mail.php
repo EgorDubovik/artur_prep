@@ -13,10 +13,14 @@ require 'vendor/autoload.php';
 //$mail = new PHPMailer(true);
 
 if(isset($_POST['event'])){
-	$headers = 'From: <test@test.com>' . "\r\n" .
-'Reply-To: <test@test.com>';
-	mail('<posik.web.m@gmail.com>', 'the subject', 'the message', $headers,
-  'webmaster@just-prep.com');
+	$headers = 'From: <webmaster@just-prep.com>' . "\r\n" .
+'Reply-To: <info@just-prep.com>';
+	if(mail('<posik.web.m@gmail.com>', 'the subject', 'the message', $headers,
+  'webmaster@just-prep.com')){
+		echo "true";
+	} else {
+		echo "false";
+	}
 
 }
 // try {
