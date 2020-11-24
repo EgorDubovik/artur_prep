@@ -24,6 +24,6 @@ if(isset($_POST['event']))
 	if(mail($to, $subject, $message, $headers)){
 		echo "true";
 	} else {
-		echo "false";
+		echo "false\n".error_get_last()['message'];
 	}
 }
