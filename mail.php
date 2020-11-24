@@ -13,17 +13,17 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);
 
 if(isset($_POST['event']))
-{
-	$to      = 'posik.web.m@gmail.com';
-	$subject = 'Mail from just-prep';
-	$message = $_POST['data'];
-	$headers = 'From: webmaster@just-prep.com' . "\r\n" .
-	    'Reply-To: webmaster@just-prep.com' . "\r\n" .
-	    'X-Mailer: PHP/' . phpversion();
-
-	if(mail($to, $subject, $message, $headers)){
-		echo "true";
-	} else {
-		echo "false\n".error_get_last()['message'];
-	}
+try {
+    //Recipients
+    $mail->setFrom('from@just-prep.com', 'Mailer');
+    $mail->addAddress('posik.web.m@gmail.com');     // Add a recipient
+    $mail->addReplyTo('info@just-prep.com', 'Information');
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'Sending from just-prep';
+    $mail->Body    = $_POST['data'];
+    $mail->send();
+    echo 'Sending status:true'.$_POST['data'];
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
