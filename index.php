@@ -920,7 +920,7 @@
 		<p class="contact-subtitle">
 			<?=$_LANG['sec3']['text']?>
 		</p>
-		<form action="#" class="contact-form">
+		<form action="#" class="contact-form" id="form1">
 			<div class="contact-form-input">
 				<input type="text" placeholder="<?=$_LANG['sec3']['inputName']?>" class="name">
 				<span>
@@ -933,7 +933,7 @@
 					<?=$_LANG['sec3']['inputError']?>
 				</span>
 			</div>
-			<button class="blue-btn">
+			<button class="blue-btn" onclick="sendForm('form1')">
 				<?=$_LANG['sec3']['btn']?>
 			</button>
 		</form>
@@ -1098,9 +1098,34 @@
 		</div>
 	</div>
 </footer>
-
+	<script type="text/javascript">
+		function sendForm(form) {
+			var text = "";
+			var btn = $('#'+form).find('button').text();
+			$('#'+form).find('input').each(function(){
+				text+="\n<br>"+$(this).attr("class")+":"+$(this).val();
+			});
+			$('#'+form).find('button').text("Sending...");
+			$.ajax({
+				url : "mail.php",
+				method : "POST",
+				data: {
+					data : text
+				}
+			}).done(function(response){
+				alert("Message has been sent")
+				$('#'+form).find('input').each(function(){
+					$(this).val("");
+				});
+				$('#'+form).find('button').text(btn);
+			}).fail(function(error,textStatus){
+				alert( "Request failed: " + textStatus );
+				$('#'+form).find('button').text(btn);
+			})
+		}
+	</script>
 	<script src="js/bundle.js"></script>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
