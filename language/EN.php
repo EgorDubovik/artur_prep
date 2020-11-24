@@ -6,7 +6,7 @@ $_EN = [
 	],
 	'sec1' => [
 		'title' => "Reduce shipping costs at 50%",
-		'text' => "A full range of warehouse services for sellers on amazon, eBay and other marketplaces",
+		'text' => "A full range of warehouse services for sellers on Amazon, eBay and other marketplaces",
 		'opt1' => "<b>12 miles</b> from biggest Amazon warehouses",
 		'opt2' => "Online <b>shipment tracking</b> service",
 		'btn1' => "Contact us",
@@ -31,23 +31,23 @@ $_EN = [
 	],
 	'stat' => [
 		[
-			'num'=>849,
+			'num'=>412,
 			'text' =>'<b>Incoming orders processed</b>'
 		],
 		[
-			'num'=>1492,
+			'num'=>654,
 			'text' =>'<b>Parcels</b> <br> <b>sent</b>'
 		],
 		[
-			'num'=>2016,
+			'num'=>2018,
 			'text' =>'<b>Year of foundation</b> <br> <b>Just Prep Center</b>'
 		],
 		[
-			'num'=>1213,
+			'num'=>637,
 			'text' =>'<b>Pounds</b> <br> <b>transported</b>'
 		],
 		[
-			'num'=>1046,
+			'num'=>585,
 			'text' =>'<b>Shipments packed</b>'
 		],
 	],
@@ -55,62 +55,80 @@ $_EN = [
 		'title'=>'Price-list',
 		'cat'=>[
 			'title'=>'Choose category',
-			'cat1'=>'Выгрузка',
-			'cat2'=>'Склад',
-			'cat3'=>'Погрузка'
+			'cat1'=>'Receiving',
+			'cat2'=>'Warehouse',
+			'cat3'=>'Shipment'
 		],
 		'btn_price_pdf' => 'Download price-list in PDF',
 		'option'=>[
 			[ // Tab number 1 (для Выгрузка)
-				['Выгрузка контейнера','$ 200-500','за контейнер',
+				['Unload full container','$ 300-550','per container',
 					'tooltip'=>""
 				],
-				['LTL (меньше нагрузки на грузовик)','$ 20','за паллет'],
-				['Единовременный сбор','$ 3-4','за случай',
-					'tooltip'=>'Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)'
+				['LTL (Less Truck Load)','$ 20','per pallet'
+			    ],
+				['Unload packed units','$ 2,5-4,5','per unit',
+					'tooltip'=>'"Packed" means packed in box, polybag or etc.'
 				],
-				['Плата за тяжелую подъемную работу','$ 10','за случай',
-					'tooltip'=>'Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)'
+				['Heavy lifting fee','$ 10','per unit',
+					'tooltip'=>'Does your shipment include cases that weigh more than 50 lbs? Then will be charged per unit.'
 				],
-				['Единовременный сбор','$ 3-4','за случай',
-					'tooltip'=>""
+				['FBA Returns','$ 2,5','per unit',
+					'tooltip'=>"We accept returns for shipment to the manufacturer. Inspection product included. Shipping cost excluded."
+				],
+				['Purchase of goods from a supplier','% 3','from invoice',
+					'tooltip'=>"If for some reason you are do not want or are not able to buy back their goods from the supplier: please contact us and we will help"
 				]
+
 			],
 
 			[ // Tab number 2 (Для Склад)
-				['Плата за тяжелую подъемную работу','$ 10','за случай',
+				['FNSKU Labeling','$ 0,6-0,7','per label',
+					'tooltip'=>"Oversized products will be charged + $0,3 per unit.  Oversized products are products larger than 18 inches on its longest side, 14 inches on its median side, 8 inches on its shortest side, and weigh more than 20 lbs."
+				],
+				['Custom Labeling, Expiration Labels, Suffocation Warning Labels','$ 2,5-3,5','per unit',
+				    'tooltip'=>"Oversized products will be charged + $0,3 per unit.  Oversized products are products larger than 18 inches on its longest side, 14 inches on its median side, 8 inches on its shortest side, and weigh more than 20 lbs."
+			    ],
+				['Marketing inserts','$ 1,5-2,5','per unit',
+					'tooltip'=>'We offer the opportunity to include your marketing insert in the product package'
+				],
+				['Polybags (Suffocation Warning Labels included)','$ 0,5-0,6','per unit',
+					'tooltip'=>'If you need custom polybags contact us for a custom quote.'
+				],
+				['Multipacking/Bundling/Sets','$ 1,5-2,5','per set',
+					'tooltip'=>"The cost varies from the number of units in set"
+				],
+				['Boxes','$ 1,5-2,5','per box',
+					'tooltip'=>"We offer many box sizes, contact us for additional information. No charge for items shipped out in the same box"
+				],
+				['Bubble wrap','$ 0,5','per unit',
+					'tooltip'=>"Bubble wrap is a pliable transparent plastic material used for packing fragile items."
+				],
+				['Wrap Paper','$ 0,25','per feet',
 					'tooltip'=>""
 				],
-				['Единовременный сбор	','$ 3-4','за паллет'],
-				['Единовременный сбор','$ 3-4','за случай',
-					'tooltip'=>'Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)'
+				['Professional Product Photography (on solid color background)','$ 5','per photo',
+					'tooltip'=>"If you need something special, we have a professional photographer for that. Contact us for quote."
 				],
-				['Выгрузка контейнера','$ 200-500','за контейнер',
-					'tooltip'=>''
+				['Storage','$ 0,5','Cubic square feet in a month',
+					'tooltip'=>"Also we provide storage by pallets"
 				],
-				['LTL (меньше нагрузки на грузовик)','$ 20','за паллет',
+				['Books','$ 2,5','Per book',
+					'tooltip'=>""
+				],
+				['Recycling','Bargain price','',
 					'tooltip'=>""
 				]
 
 			],
 
 			[ // Tab number 3 (Для Погрузка)
-				['Единовременный сбор','$ 3-4','за случай',
-					'tooltip'=>'Происходящий или производимый только один раз, сразу. Единовременное пособие. Единовременная выплата. (Малый академический словарь, МАС)'
+				['Palletizing/repalletizing','$ 30','per pallet',
+					'tooltip'=>'The cost of shipping Your products outbound on OUR pallets. Applied if your shipment didn’t arrive on pallets but is being sent out LTL, or if your shipment arrived on non-compliant pallets and is being sent out LTL, or if your inbound shipment arrived on compliant 4-way pallets but required a pallet exchange and is being sent out LTL). Price includes cost of our pallets..'
 				],
-				['Выгрузка контейнера','$ 200-500','за контейнер',
-					'tooltip'=>''
-				],
-				['Плата за тяжелую подъемную работу','$ 10','за случай',
-					'tooltip'=>""
-				],
-				['Единовременный сбор	','$ 3-4','за паллет'],
-				
-				
-				['LTL (меньше нагрузки на грузовик)','$ 20','за паллет',
-					'tooltip'=>""
+				['Pallets shrink-wrapping','$ 5','per pallet',
+					'tooltip'=>'Shrink wrapping your LTL pallet before forwarding to FBA'
 				]
-
 			]
 
 		]
@@ -134,7 +152,7 @@ $_EN = [
 			'inputMes' => 'Message',
 			'inputError' => 'Filled incorrect',
 			'titleMes' => 'Message topic',
-			'options'=> [ // сколько сдесьбудет элементов столько будет в выпадаюшем списке
+			'options'=> [ // сколько здесь будет элементов столько будет в выпадаюшем списке
 						'I want to order your services','I want to offer my services','I want to propose other forms of partnership'
 						],
 			'btn' => 'Send message',
