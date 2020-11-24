@@ -55,11 +55,6 @@
 					</a>
 				</li>
 				<li>
-					<a href="#statistic">
-						<?=$_LANG['menu'][2]?>
-					</a>
-				</li>
-				<li>
 					<a href="#how-works">
 						<?=$_LANG['menu'][3]?>
 					</a>
@@ -1040,7 +1035,7 @@
 	<div class="footer-main">
 		<div class="container">
 			<a href="#" class="footer-logo">
-				<img src="img/logo-white.svg" alt="logo">
+				<img src="img/logo.png" width="135px;" alt="logo">
 			</a>
 			<div class="social">
 				<a href="https://t.me/JustPrepCenter">
