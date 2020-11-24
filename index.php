@@ -1105,15 +1105,18 @@
 			$('#'+form).find('input').each(function(){
 				text+="\n<br>"+$(this).attr("class")+":"+$(this).val();
 			});
+			text += "\n<br> from:"+form;
 			$('#'+form).find('button').text("Sending...");
 			$.ajax({
 				url : "mail.php",
 				method : "POST",
 				data: {
-					data : text
+					data : text,
+					event : 'sending'
 				}
 			}).done(function(response){
 				alert("Message has been sent")
+				console.log(response);
 				$('#'+form).find('input').each(function(){
 					$(this).val("");
 				});

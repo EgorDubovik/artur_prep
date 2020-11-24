@@ -11,6 +11,8 @@ require 'vendor/autoload.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
+
+if(isset($_POST['event']))
 try {
     //Recipients
     $mail->setFrom('from@example.com', 'Mailer');
@@ -18,12 +20,10 @@ try {
     $mail->addReplyTo('info@example.com', 'Information');
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
+    $mail->Subject = 'Sending from just-prep';
+    $mail->Body    = $_POST['data'];
     $mail->send();
-    echo 'Message has been sent';
+    echo 'Sending status:true'.$_POST['data'];
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
