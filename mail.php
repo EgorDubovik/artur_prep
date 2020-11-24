@@ -19,7 +19,7 @@ if(isset($_POST['event'])){
   'webmaster@just-prep.com')){
 		echo "true";
 	} else {
-		echo "false";
+		echo "false".error_get_last()['message'];
 	}
 
 }
