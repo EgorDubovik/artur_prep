@@ -910,7 +910,7 @@
 				<?php endfor;?>
 				
 			</div>
-			<a href="#" class="yellow-btn">
+			<a href="source/Pricelist_for_Customers.pdf" class="yellow-btn">
 				<?=$_LANG['pricelist']['btn_price_pdf']?>
 			</a>
 		</div>
