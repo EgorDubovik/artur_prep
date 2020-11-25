@@ -603,7 +603,7 @@
 			</div>
 		</div>
 		<div class="hero-illustration">
-			<img src="img/illustr.svg" alt="illustration">
+			<img src="img/<?=$_LANG['illustr']?>" alt="illustration">
 			<svg width="759" height="560" viewBox="0 0 759 560" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g class="hero-pc-play-btn">
 					<path d="M296.099 287.349V279.73H294.676C293.354 277.495 291.22 275.464 288.171 273.635C277.6 267.541 260.423 267.541 249.853 273.635C246.804 275.362 244.67 277.495 243.348 279.73H241.925V287.247C241.925 291.31 244.568 295.272 249.853 298.319C260.423 304.414 277.6 304.414 288.171 298.319C293.456 295.373 296.099 291.31 296.099 287.349Z" fill="#3D2291"/>
@@ -910,7 +910,7 @@
 				<?php endfor;?>
 				
 			</div>
-			<a href="source/Pricelist_for_Customers.pdf" class="yellow-btn">
+			<a href="source/Pricelist_for_Customers.pdf" target="_blank" class="yellow-btn">
 				<?=$_LANG['pricelist']['btn_price_pdf']?>
 			</a>
 		</div>
