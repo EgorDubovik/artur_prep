@@ -1,6 +1,7 @@
 <?php
 
 $_EN = [
+	'illustr'=>'illustr.svg',
 	'menu'=>[
 		'Menu','About us','Payment','How it works','Price-list','FAQ','Contact us','Sign in'
 	],
