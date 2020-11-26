@@ -14,25 +14,14 @@ require 'vendor/autoload.php';
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
-
-// $data = "test text";
-// // if(isset($_POST['event'])){
-// 	$headers = 'From: <webmaster@just-prep.com>' . "\r\n" .
-// 'Reply-To: <info@just-prep.com>';
-// 	if(mail('<posik.web.m@gmail.com>', 'the subject', 'the message', $headers)){
-// 		echo "true";
-// 	} else {
-// 		echo "false:".error_get_last()['message'];
-// 	}
-
-// // }
+include 'source/gmp.php';
 if(isset($_POST['event'])){
 	$data = $_POST['data'];
 	$mail->isSMTP();                                            
 	$mail->Host       = 'smtp.gmail.com';                    
 	$mail->SMTPAuth   = true;                                   
 	$mail->Username   = 'justprepcenter@gmail.com';                     
-	$mail->Password   = 'xxxxxxxx';                               
+	$mail->Password   = $gmp;                               
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
 	$mail->Port       = 587;                   
 	try {
