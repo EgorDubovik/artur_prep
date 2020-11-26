@@ -973,7 +973,7 @@
 			<div class="contact-us-title">
 				<?=$_LANG['sec5']['form']['title']?>
 			</div>
-			<form action="#" class="contact-us-form">
+			<form action="#" class="contact-us-form" id='form2'>
 				<div class="contact-us-form-input">
 					<input type="text" placeholder="<?=$_LANG['sec5']['form']['inputEmail']?>" class="email">
 					<span>
@@ -981,7 +981,7 @@
 					</span>
 				</div>
 				<div class="select-wrap">
-					<select>
+					<select id="them_mass">
 						<option value="Option 0" hidden><?=$_LANG['sec5']['form']['titleMes']?></option>
 						<?php for($i=0;$i<count($_LANG['sec5']['form']['options']);$i++) :?>
 							<option value="Option 1"><?=$_LANG['sec5']['form']['options'][$i]?></option>
@@ -994,7 +994,7 @@
 						<?=$_LANG['sec5']['form']['inputError']?>
 					</span>
 				</div>
-				<button type="submit" class="yellow-btn">
+				<button type="submit" class="yellow-btn" onclick="sendForm('form2')">
 					<?=$_LANG['sec5']['form']['btn']?>
 				</button>
 			</form>
@@ -1070,14 +1070,14 @@
 				<div class="footer-contact-title">
 					<?=$_LANG['footer']['title']?>
 				</div>
-				<form action="#" class="footer-contact-form">
+				<form action="#" class="footer-contact-form" id='form3'>
 					<div class="footer-contact-form-input">
 						<input type="text" placeholder="<?=$_LANG['footer']['inputEmail']?>">
 						<span>
 							<?=$_LANG['footer']['inputError']?>
 						</span>
 					</div>
-					<button>
+					<button type="submit" onclick="sendForm('form3')">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M10 14L21 3" stroke="#190E38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							<path d="M21 3L14.5 21C14.4561 21.0957 14.3857 21.1769 14.2971 21.2338C14.2084 21.2906 14.1053 21.3209 14 21.3209C13.8947 21.3209 13.7916 21.2906 13.703 21.2338C13.6143 21.1769 13.5439 21.0957 13.5 21L10 14L3.00001 10.5C2.90427 10.4561 2.82314 10.3857 2.76626 10.2971C2.70938 10.2084 2.67914 10.1053 2.67914 10C2.67914 9.89468 2.70938 9.79158 2.76626 9.70295C2.82314 9.61431 2.90427 9.54387 3.00001 9.5L21 3Z" stroke="#190E38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1108,9 +1108,18 @@
 		function sendForm(form) {
 			var text = "";
 			var btn = $('#'+form).find('button').text();
-			$('#'+form).find('input').each(function(){
-				text+="\n<br>"+$(this).attr("class")+":"+$(this).val();
-			});
+			if(form=='form1'){
+				$('#'+form).find('input').each(function(){
+					text+="\n<br>"+$(this).attr("class")+":"+$(this).val();
+				});
+			} else if(form=='form2'){
+				text+='\nemail:'+$('#'+form).find('input').val();
+				text+='\nthem:'+$('#them_mass option:selected' ).text();
+				text+='\ntext:'+$('#'+form).find('textarea').val();
+				
+			} else if(form=='form3'){
+				text+="\nemail:"+$('#'+form).find('input').val();
+			}
 			text += "\n<br> from:"+form;
 			$('#'+form).find('button').text("Sending...");
 			$.ajax({
