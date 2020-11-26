@@ -13,29 +13,38 @@ require 'vendor/autoload.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
-$data = "test text";
-// if(isset($_POST['event'])){
-	$headers = 'From: <webmaster@just-prep.com>' . "\r\n" .
-'Reply-To: <info@just-prep.com>';
-	if(mail('<posik.web.m@gmail.com>', 'the subject', 'the message', $headers)){
-		echo "true";
-	} else {
-		echo "false:".error_get_last()['message'];
+
+
+// $data = "test text";
+// // if(isset($_POST['event'])){
+// 	$headers = 'From: <webmaster@just-prep.com>' . "\r\n" .
+// 'Reply-To: <info@just-prep.com>';
+// 	if(mail('<posik.web.m@gmail.com>', 'the subject', 'the message', $headers)){
+// 		echo "true";
+// 	} else {
+// 		echo "false:".error_get_last()['message'];
+// 	}
+
+// // }
+if(isset($_POST['event'])){
+	$data = $_POST['data'];
+	$mail->isSMTP();                                            
+	$mail->Host       = 'smtp.gmail.com';                    
+	$mail->SMTPAuth   = true;                                   
+	$mail->Username   = 'justprepcenter@gmail.com';                     
+	$mail->Password   = 'xxxxxxxx';                               
+	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
+	$mail->Port       = 587;                   
+	try {
+	    //Recipients
+	    $mail->setFrom('justprepcenter@gmail.com', 'Just Prep');
+	    $mail->addAddress('justprepcenter@gmail.com');
+	    $mail->isHTML(true);                                  
+	    $mail->Subject = 'Sending from just-prep';
+	    $mail->Body    = $data;
+	    $mail->send();
+	    echo "true";
+	} catch (Exception $e) {
+	    echo "false";
 	}
-
-// }
-
-// try {
-//     //Recipients
-//     $mail->setFrom('from@just-prep.com', 'Mailer');
-//     $mail->addAddress('posik.web.m@gmail.com');     // Add a recipient
-//     $mail->addReplyTo('info@just-prep.com', 'Information');
-//     // Content
-//     $mail->isHTML(true);                                  // Set email format to HTML
-//     $mail->Subject = 'Sending from just-prep';
-//     $mail->Body    = $data;
-//     $mail->send();
-//     echo 'Sending status:true'.$data;
-// } catch (Exception $e) {
-//     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-// }
+}
