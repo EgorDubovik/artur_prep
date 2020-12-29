@@ -1,0 +1,257 @@
+[33mcommit 91917b57b2ee3826b8076e8445ecc58279582143[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Sun Dec 13 21:44:53 2020 -0600
+
+    add chat script
+
+[33mcommit a7f998596b71eace90619b65d3f466cfbd4f8da7[m
+Author: Ubuntu <ubuntu@ip-172-31-21-101.us-east-2.compute.internal>
+Date:   Mon Dec 14 03:43:22 2020 +0000
+
+    add seo files to ignore
+
+[33mcommit 930576b27815c07da6e8d1a158ada04a6d008f4d[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Thu Nov 26 11:56:40 2020 -0600
+
+    send email from all forms
+
+[33mcommit a960cd33e1324d9b863ab75c242605e03ea0a2b3[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Thu Nov 26 11:43:22 2020 -0600
+
+    connect to gmail
+
+[33mcommit fe9fae9880e78c36d34667ed5f76f3910b2d0d0d[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Thu Nov 26 11:41:55 2020 -0600
+
+    send mail thrue smtp gmail
+
+[33mcommit 2ae2366af9fe86674d9cd1f122611f1c72a0012f[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Thu Nov 26 09:06:18 2020 -0600
+
+    fix faveicon
+
+[33mcommit d84a217e6bbe8c7cf83ad0e566107a408a81edb4[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Tue Nov 24 18:47:43 2020 -0600
+
+    fixes
+
+[33mcommit 1d638f6f47e2aca64ac56b417a1c9f038a2ef6da[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Tue Nov 24 18:45:21 2020 -0600
+
+    add price list
+
+[33mcommit 3c4307ea65fde600bcc58bb64a635da4d62b297a[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Tue Nov 24 18:44:04 2020 -0600
+
+    add view lang img
+
+[33mcommit f645fe686b0a1b7a3d0a3b22688299881c60dd6c[m
+Author: Ubuntu <ubuntu@ip-172-31-21-101.us-east-2.compute.internal>
+Date:   Wed Nov 25 00:41:54 2020 +0000
+
+    add image
+
+[33mcommit dbc742dff3b867fe012ca61adc439882b1f3aef5[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Tue Nov 24 08:26:14 2020 -0600
+
+    fix
+
+[33mcommit 8e6765789e3bc2a8152d98653d3307bb0b8ef811[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Tue Nov 24 08:18:37 2020 -0600
+
+    fixes
+
+[33mcommit 415e98b72c3a7ae1b5f7ca5524f70916dc3fdc46[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 21:15:44 2020 -0600
+
+    fix
+
+[33mcommit 4ccf83dcde029d3143bfe8822876d178ea1b33e9[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 21:02:34 2020 -0600
+
+    mail fix
+
+[33mcommit 8afc433c789c3679089d0e756f56a07dd5c89c56[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 20:55:16 2020 -0600
+
+    try mail
+
+[33mcommit ab3fec4bf4aa19346d5a74d547d833e2886e1978[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 19:51:56 2020 -0600
+
+    use PHPMailer
+
+[33mcommit 2989f48f0d31b97cdd8cffb2066f048104cca252[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 19:49:52 2020 -0600
+
+    fixes
+
+[33mcommit 267e47c53d9c565f5c46b08a750a553665565455[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 19:40:33 2020 -0600
+
+    view info
+
+[33mcommit cfb48b886146e41f5d99480b75c504c1c48368f8[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 19:37:42 2020 -0600
+
+    change to mail
+
+[33mcommit 93d4b79001c5214aa8ae259548d5af634b7b125e[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 19:35:14 2020 -0600
+
+    fixes
+
+[33mcommit 680ea3860ca7bc5c586a8a55fec7de03a246ad95[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 19:30:32 2020 -0600
+
+    add php mailing
+
+[33mcommit 46e9895a1cf2354e62db110147c2376b4dc961e4[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 19:26:44 2020 -0600
+
+    add js sending mess
+
+[33mcommit d68da16e26b0a83b501dfa7fb39cba1ea9e3b473[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 23 18:54:55 2020 -0600
+
+    fixes
+
+[33mcommit 8049cc5cd6a18c445f866350fb17d045d17f8777[m
+Author: Ubuntu <ubuntu@ip-172-31-21-101.us-east-2.compute.internal>
+Date:   Tue Nov 24 00:43:53 2020 +0000
+
+    lang cheng
+
+[33mcommit fa7bed8fdc67ea02277a406505c571355caff668[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Fri Nov 20 07:35:40 2020 -0600
+
+    Add more price
+
+[33mcommit 47d80b041344e01617e487d84625c0b7a4707369[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Fri Nov 20 07:25:51 2020 -0600
+
+    add social
+
+[33mcommit 3cc6eaa07c2e08ce9b18c05303cf4a73a5f83aec[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Thu Nov 19 07:37:06 2020 -0600
+
+    lang ch
+
+[33mcommit 1c6cb4fcd8560c144c1f8c5539b899c18647fed8[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Wed Nov 18 08:27:55 2020 -0600
+
+    view errors
+
+[33mcommit 5407fab4e72abdd1c31d23e68de0a46eaacbe44c[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Wed Nov 18 08:10:21 2020 -0600
+
+    map
+
+[33mcommit c112020d1996c4edf8ae57f5951761f4b044eb17[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Wed Nov 18 07:53:47 2020 -0600
+
+    fix 5,6
+
+[33mcommit 0faba9296591ef600a00e7bfde6a1f18ccc69c5a[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Wed Nov 18 07:48:48 2020 -0600
+
+    fix 1
+
+[33mcommit bd5709858efba6bea2e3b5bc7b33c9addb9a978f[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Tue Nov 17 08:24:14 2020 -0600
+
+    add video
+
+[33mcommit 4b2b4e55611ea5065ef38a812f68b003f6de04b7[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Fri Nov 6 07:24:56 2020 -0600
+
+    Fix view lang v3
+
+[33mcommit e16b0b4b1754e059ed7a73043310940e7e115736[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Fri Nov 6 07:23:20 2020 -0600
+
+    Fix bug view lang v2
+
+[33mcommit 6af70034bd3c8bd7166a09239991f3cea8bedbc4[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Fri Nov 6 07:19:54 2020 -0600
+
+    Fix view language
+
+[33mcommit 3e5522996c94ceaeac7113dbeb9f6ddf504a531d[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Thu Nov 5 16:00:07 2020 -0600
+
+    chenge text
+
+[33mcommit dcf15134913b5cc578da84a6635e44bfeaa454f6[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Tue Nov 3 17:26:03 2020 -0600
+
+    add script check browser language and change to link
+
+[33mcommit 1b09e54f106b06ef8956fa039de20b195f88025c[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Tue Nov 3 17:12:59 2020 -0600
+
+    Add all russian text
+
+[33mcommit b7a47e274049827e1dd50712c24e735df3836d75[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Tue Nov 3 08:11:36 2020 -0600
+
+    Add ru text
+
+[33mcommit e1a0a7bf5e60fb62d294ce567ec4e2aad417c696[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 2 23:20:03 2020 -0600
+
+    Add RU file
+
+[33mcommit 240df364a40e11fba9e7ea269f463f8f93c3aa54[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 2 23:08:44 2020 -0600
+
+    add text to rus language
+
+[33mcommit 6d1538990e175c26824ef33cdca85d0ed4d7a295[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 2 23:01:50 2020 -0600
+
+    Add language log
+
+[33mcommit a1eb1a10c71694b88180f77bf06450a93e30421e[m
+Author: EgorDubovik <posik.web.m@gmail.com>
+Date:   Mon Nov 2 22:51:10 2020 -0600
+
+    init project

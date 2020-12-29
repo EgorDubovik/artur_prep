@@ -41,6 +41,7 @@
 	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+	<script src="//code.jivosite.com/widget/to0OVkBmQT" async></script>
 </head>
 
 <body>
@@ -1144,7 +1145,7 @@
 	</script>
 	<script src="js/bundle.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src='https://chat.keepincrm.com/chat_widgets/TsckHxlwgBwN.js' type='text/javascript'></script>
+	<!--<script src='https://chat.keepincrm.com/chat_widgets/TsckHxlwgBwN.js' type='text/javascript'></script>-->
 </body>
 
 </html>
